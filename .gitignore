@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.streamlit/secrets.toml
+data/
+results/
+*.rds
+*.RData
+*.npz
+*.sqlite3
+*.xlsx
+*.docx
+*.pdf
+*.tif
+*.csv

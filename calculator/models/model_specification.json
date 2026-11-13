@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "study_model": "Age-creatinine TabM",
+  "fixed_features_all_folds": [
+    "age",
+    "creatinine"
+  ],
+  "imputations": 30,
+  "members": 32,
+  "epochs": 14,
+  "models": {
+    "TabM2": {
+      "features": [
+        "age",
+        "creatinine"
+      ],
+      "calibration": "None",
+      "calibration_coefficients": [
+        0,
+        1
+      ],
+      "threshold": 0.129243104966978
+    }
+  },
+  "deployment_input": "Observed age in years and serum creatinine in micromol/L",
+  "prediction": "Mean member probability, followed by mean across 30 fitted models",
+  "endpoint": "Serum phosphate >1.45 mmol/L on admission day 0 or 1",
+  "training_observed_range": {
+    "age": [
+      24.055250963401,
+      100.842590881401
+    ],
+    "creatinine": [
+      21.0,
+      1719.5
+    ]
+  }
+}
